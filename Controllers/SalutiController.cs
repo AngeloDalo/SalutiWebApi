@@ -13,5 +13,7 @@ namespace SalutiWebApi2.Controllers
         public string getSaluti(){
             return "Saluti, sono la tua prima web api creata in c#";
         }
+        [HttpGet("{Nome}")]
+        public string getSaluti(String Nome) => string.Format("Saluti, {0} sono il tuo primo web service creato in C# 6.0", Nome);
     }
 }
